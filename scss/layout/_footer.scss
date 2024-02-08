@@ -1,0 +1,51 @@
+.footer {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    row-gap: $row-gap--small;
+    max-width: 1140px;
+    @media screen and (max-width: 1250px) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  .info,
+  .navigation {
+    line-height: 30px;
+
+    .footer__logo-box {
+      filter: invert(1);
+      padding-bottom: 30px;
+    }
+
+
+    &__heading {
+      @include regular-fs(normal);
+      font-weight: 500;
+      margin-bottom: 1em;
+    }
+    &__content {
+      @include regular-fs(base);
+
+      .main-menu {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    width: unset;
+  }
+  .info {
+    min-width: 300px;
+    width: 50%;
+    max-width: 100vw;
+  }
+  .left {
+    margin-right: 10%;
+  }
+}

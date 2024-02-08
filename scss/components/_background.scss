@@ -1,0 +1,78 @@
+.bg-black {
+    $f-color: $c-f-white;
+    $bg-color: $c-bg-black;
+  
+    color: $f-color;
+    background: $bg-color;
+  
+    
+    &.module {
+      background: $bg-color;
+    }
+    .gradient-border-shadow {
+      @include gradient-border-shadow($bg-color);
+    }
+    .btn-empty {
+      background-color: $bg-color;
+    }
+  
+
+&.bg-oval {
+position: relative;
+padding-top: 200px;
+padding-bottom: 200px;
+background-color: transparent;
+height: 100%;
+overflow: visible;
+@media screen and (max-width: $bp-tablet) {
+  padding-top: 100px;
+}
+
+&::before {
+    content:"";
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    background-color: $c-bg-black;
+z-index: -1;
+border-radius: 50%;
+}
+}
+   
+  
+  
+  &.oval-var-2::before  {
+    width: 200vw;
+    left: -65vw;
+    top: 1.5vh;
+    @media screen and (max-width: $bp-tablet) {
+      width: 520vw;
+      left: -200vw;
+  
+    }
+  }
+
+  &.oval-var-1::before  {
+    width: 300vw;
+    left: -50vw;
+    top: -5vh;
+    @media screen and (max-width: $bp-tablet) {
+      width: 620vw;
+      left: -200vw;
+  
+    }
+  }
+
+  .module__heading:not(#leistungen) {
+    color: $c-f-red;
+  }
+}
+    
+
+
+
+
+
+  
+  
+  

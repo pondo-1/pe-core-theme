@@ -1,0 +1,113 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none
+}
+
+*:focus-visible {
+  outline: 2px dashed currentColor;
+  outline-offset: 2px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $c-bg-basic;
+  color: $c-f-black;
+}
+a {
+  color: inherit;
+}
+
+a:hover,
+.hamburger__icon:hover,
+.swiper-button-next:hover,
+.swiper-button-prev:hover,
+.swiper-pagination-bullet:hover {
+opacity: 0.75;  
+ }
+
+a:active,
+.hamburger__icon:hover,
+.swiper-button-next:active,
+.swiper-button-prev:active,
+.swiper-pagination-bullet:active {
+opacity: 1;  
+ }
+
+//dev perpose
+// section.module {
+//   border: solid 1px red;
+//   .container {
+//     border: solid 1px green;
+//   }
+// }
+
+.main {
+  overflow-x: hidden;
+
+.module {
+  margin: 10rem auto;
+  position: relative;
+  z-index: $m-z-index-default;
+  // max-width: 1600px;
+  overflow: hidden;
+  &__heading {
+    margin-bottom: $row-gap;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 40px auto;
+  @media screen and (max-width: 1250px) {
+    padding: 0 5%;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+
+.text-box {
+  p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+}
+
+/* 404 Template */
+
+.error404 {
+  min-height: 100vh;
+  @include flex(column);
+  justify-content: space-between;
+  }
+
+.error404 .main {
+padding-top: 15vh;
+padding-bottom: 15vh;
+min-height: 50vh;
+}
+
+.error404 h1 {
+padding-bottom: 1em;
+  }
+
+  .error404 .main p {
+    font-size: 26px;
+      }
