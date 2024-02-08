@@ -1,2 +1,2 @@
-# Wp-theme-blueprint
-Wp-theme-blueprint
+# pe-core-theme
+Basic Theme including ACF, no Shop Support
