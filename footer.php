@@ -5,15 +5,12 @@
  *
  */
 ?>
-<div id="animation" class="animation">
-    <div id="point1" class="point1 point"></div>
-    <div id="point2" class="point2 point"></div>
-</div>
+
 
 </main><!-- .site-main -->
 
-<footer class="footer bg-black">
-    <div class="container column-2">
+<footer class="footer">
+    <div class="container">
         <div class="info left">
             <!-- <div class="company-name info__heading">Page Effekt e. K.</div> -->
             <div class="footer__logo-box">
