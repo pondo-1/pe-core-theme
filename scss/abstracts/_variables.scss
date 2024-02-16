@@ -8,8 +8,19 @@ $c-f-white: #fff;
 
 
 //CTAs
-$c-f-red:  #e05976;
-$sec-violett: #313decd6;
+$color-primary:  #FF9B00;
+$color-secondary: #78BCAA;
+
+//Subjects
+$color-brand-design: #FA6963;
+$color-3d: #B9CD58;
+
+//Feedback
+$color-error: #E53935;
+$color-warning: #FFC107;
+$color-sucess: #4CAF50;
+
+
 
 
 // defualt 12 column, each width: 73px
@@ -27,22 +38,3 @@ $bp-largest: 1250px;
 $bp-tablet: 900px;
 $bp-smallfont: 600px;
 $bp-last: 400px;
-
-// Z-index
-// Modules
-$m-z-index-default: 10; // .module
-$m-z-index-1: $m-z-index-default + 1; //.feature
-$m-z-index-2: $m-z-index-1 + 1;
-$m-z-index-3: $m-z-index-2 + 1;
-$m-z-index-4: $m-z-index-3 + 1;
-$m-z-index-5: $m-z-index-4 + 1;
-// Header/ overlay
-$h-z-index-default: $m-z-index-default + 20;
-$h-z-index-1: $h-z-index-default + 1;
-$h-z-index-2: $h-z-index-1 + 1;
-$h-z-index-3: $h-z-index-2 + 1;
-$h-z-index-4: $h-z-index-3 + 1;
-$h-z-index-5: $h-z-index-4 + 1;
-
-// gradient
-$gradient-default: linear-gradient(200deg, $c-f-red, $sec-violett);

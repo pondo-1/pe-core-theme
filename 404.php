@@ -12,7 +12,7 @@
 
 <?php get_header(); ?>
 <div class="container">
-    <h1>:-(</br>Hier gibt es leider nicht zu sehen - sorry </h1>
+    <h1>:-(</br>Hier gibt es leider nicht zu sehen </h1>
     <p>Die aufgerufene Seite exisistiert leider nicht (mehr).</p>
     <p>Hier gelangen Sie zur <a href="/">Startseite</a></p>
 </div>
