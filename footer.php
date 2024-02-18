@@ -21,7 +21,7 @@
                     <?php echo wp_get_attachment_image($site_logo); ?>
                     <?php else : ?>
                     <img width="207" height="48"
-                        src="<?php echo get_template_directory_uri() ?>/asset/img/Pageeffect_logo.svg"
+                        src="<?php echo get_template_directory_uri() ?>/asset/img/dummy-logo-5b.png"
                         class="attachment-thumbnail size-thumbnail" alt="Pageeffect logo" decoding="async">
                     <?php endif; ?>
                 </a>

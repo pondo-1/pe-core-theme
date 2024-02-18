@@ -1,5 +1,5 @@
 <section class="module image-gallery">
-    <div class="container gradient-border-shadow">
+    <div class="container">
         <?php $image_gallery_images = get_field('image_gallery'); ?>
         <?php if ($image_gallery_images): ?>
         <?php foreach ($image_gallery_images as $image_gallery_image): ?>
@@ -19,7 +19,7 @@
 </section>
 
 <section class="module image-gallery">
-    <div class="container gradient-border-shadow Simplelightbox">
+    <div class="container Simplelightbox">
         <?php $image_gallery_images = get_field('image_gallery'); ?>
 
         <?php if ($image_gallery_images): ?>

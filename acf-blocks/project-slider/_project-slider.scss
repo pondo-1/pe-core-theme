@@ -38,7 +38,6 @@
     }
 
     &.active {
-      @include gradient-border-feature(#191919);
       .slide__image {
         position: absolute;
       }
@@ -47,7 +46,6 @@
 
   .swiper-slide-active {
     .slide {
-      @include gradient-border-feature(#191919);
       box-shadow: 0 0 10px 5px rgb(184, 183, 183);
       .slide__image {
         position: absolute;

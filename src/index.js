@@ -1,7 +1,6 @@
 import "../scss/index.scss";
 
 import Lightbox from "../acf-blocks/image-gallery/lightbox";
-import Animation from "../template-parts/animation";
 import Slide from "../acf-blocks/project-slider/slider";
 
 // 3rd party packages
@@ -18,7 +17,6 @@ import "../node_modules/simple-lightbox/dist/simpleLightbox.css"; // style
 // import Scrollup from "../template-parts/blog/scrollup";
 var lightbox3 = new SimpleLightbox({ elements: ".Simplelightbox a" });
 const lightbox = new Lightbox();
-const animation = new Animation();
 // const slide = new Slide();
 const swiper = new Swiper(".swiperCarousel", {
   direction: "horizontal",

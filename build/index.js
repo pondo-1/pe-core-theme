@@ -60,38 +60,6 @@ class Slide {
 
 /***/ }),
 
-/***/ "./template-parts/animation.js":
-/*!*************************************!*\
-  !*** ./template-parts/animation.js ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//Backround Animation New
-
-class Animation {
-  constructor() {
-    const point1 = document.getElementById("point1");
-    document.addEventListener("mousemove", e => {
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-      point1.style.top = mouseY - 10 + "px"; //-50px : half of the height of the point
-      point1.style.left = mouseX - 10 + "px";
-    });
-    const point2 = document.getElementById("point2");
-    document.addEventListener("mousemove", e => {
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-      point2.style.top = mouseY + 10 + "px";
-      point2.style.left = mouseX + 10 + "px";
-    });
-  }
-}
-/* harmony default export */ __webpack_exports__["default"] = (Animation);
-
-/***/ }),
-
 /***/ "./node_modules/simple-lightbox/dist/simpleLightbox.css":
 /*!**************************************************************!*\
   !*** ./node_modules/simple-lightbox/dist/simpleLightbox.css ***!
@@ -10630,14 +10598,12 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/index.scss */ "./scss/index.scss");
 /* harmony import */ var _acf_blocks_image_gallery_lightbox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../acf-blocks/image-gallery/lightbox */ "./acf-blocks/image-gallery/lightbox.js");
-/* harmony import */ var _template_parts_animation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../template-parts/animation */ "./template-parts/animation.js");
-/* harmony import */ var _acf_blocks_project_slider_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../acf-blocks/project-slider/slider */ "./acf-blocks/project-slider/slider.js");
-/* harmony import */ var _node_modules_swiper_swiper_bundle_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../node_modules/swiper/swiper-bundle.mjs */ "./node_modules/swiper/swiper-bundle.mjs");
-/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.css");
-/* harmony import */ var _node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../node_modules/simple-lightbox/dist/simpleLightbox */ "./node_modules/simple-lightbox/dist/simpleLightbox.js");
-/* harmony import */ var _node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _node_modules_simple_lightbox_dist_simpleLightbox_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../node_modules/simple-lightbox/dist/simpleLightbox.css */ "./node_modules/simple-lightbox/dist/simpleLightbox.css");
-
+/* harmony import */ var _acf_blocks_project_slider_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../acf-blocks/project-slider/slider */ "./acf-blocks/project-slider/slider.js");
+/* harmony import */ var _node_modules_swiper_swiper_bundle_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/swiper/swiper-bundle.mjs */ "./node_modules/swiper/swiper-bundle.mjs");
+/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.css");
+/* harmony import */ var _node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../node_modules/simple-lightbox/dist/simpleLightbox */ "./node_modules/simple-lightbox/dist/simpleLightbox.js");
+/* harmony import */ var _node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_simple_lightbox_dist_simpleLightbox_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../node_modules/simple-lightbox/dist/simpleLightbox.css */ "./node_modules/simple-lightbox/dist/simpleLightbox.css");
 
 
 
@@ -10654,13 +10620,12 @@ __webpack_require__.r(__webpack_exports__);
 //Two example function from resp as reference
 // import Navi from "../template-parts/navigation/navigation";
 // import Scrollup from "../template-parts/blog/scrollup";
-var lightbox3 = new (_node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_6___default())({
+var lightbox3 = new (_node_modules_simple_lightbox_dist_simpleLightbox__WEBPACK_IMPORTED_MODULE_5___default())({
   elements: ".Simplelightbox a"
 });
 const lightbox = new _acf_blocks_image_gallery_lightbox__WEBPACK_IMPORTED_MODULE_1__["default"]();
-const animation = new _template_parts_animation__WEBPACK_IMPORTED_MODULE_2__["default"]();
 // const slide = new Slide();
-const swiper = new _node_modules_swiper_swiper_bundle_mjs__WEBPACK_IMPORTED_MODULE_4__["default"](".swiperCarousel", {
+const swiper = new _node_modules_swiper_swiper_bundle_mjs__WEBPACK_IMPORTED_MODULE_3__["default"](".swiperCarousel", {
   direction: "horizontal",
   loop: true,
   //Amount of slides in loop mode should be at least 2x of slidesPerView value.

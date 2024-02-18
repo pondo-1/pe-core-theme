@@ -16,7 +16,7 @@
             <?php if ($hero_image) : ?>
             <?php echo wp_get_attachment_image($hero_image, $size); ?>
             <?php else : ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/asset/img/default-Profil.png" alt="real"
+            <img src="<?php echo get_template_directory_uri(); ?>/asset/img/dummy-logo-5b.png" alt="real"
                 sizes="(max-width: 500px) 100vw, 500px">
             <?php endif; ?>
             <?php $cta_text = get_field('cta_text'); ?>

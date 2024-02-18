@@ -23,12 +23,10 @@
 
 
     &__heading {
-      @include regular-fs(normal);
       font-weight: 500;
       margin-bottom: 1em;
     }
     &__content {
-      @include regular-fs(base);
 
       .main-menu {
         list-style-type: none;
